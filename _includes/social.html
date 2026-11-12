@@ -1,6 +1,5 @@
+{%- assign s = site.social -%}
 <span class="social">
-  {% if site.social.github %}<a href="https://github.com/{{ site.social.github }}" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>{% endif %}
-  {% if site.social.linkedin %}<a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>{% endif %}
-  {% if site.social.facebook %}<a href="https://www.facebook.com/{{ site.social.facebook }}" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>{% endif %}
-  <a href="{{ '/feed.xml' | relative_url }}" title="RSS" aria-label="RSS"><i class="fa-solid fa-rss"></i></a>
-</span>
+{%- if s.github and s.github != "" %} <a href="https://github.com/{{ s.github }}" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>{% endif -%}
+{%- if s.linkedin and s.linkedin != "" %} <a href="https://www.linkedin.com/in/{{ s.linkedin }}" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>{% endif -%}
+{%- if s.facebook and s.facebook != "" %} <a href="https://www.facebook.com/{{ s.facebook }}" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>{% endif %} <a href="{{ '/feed.xml' | relative_url }}" title="RSS" aria-label="RSS"><i class="fa-solid fa-rss"></i></a></span>
