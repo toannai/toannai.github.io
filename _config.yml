@@ -16,6 +16,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from    # cho phép `redirect_from:` khi đổi link bài
 
 # Link mạng xã hội (để trống dòng nào thì icon đó tự ẩn)
 social:
