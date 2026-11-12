@@ -1,0 +1,28 @@
+{% assign share_url = page.url | absolute_url | url_encode %}
+{% assign share_title = page.title | url_encode %}
+<div class="share">
+  <span class="share-label">share:</span>
+  {% for s in site.share %}
+    {% case s %}
+    {% when 'facebook' %}
+      <a class="share-btn fb" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" title="Chia sẻ lên Facebook"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a>
+    {% when 'linkedin' %}
+      <a class="share-btn li" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener" title="Chia sẻ lên LinkedIn"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
+    {% when 'x' %}
+      <a class="share-btn x" href="https://x.com/intent/post?url={{ share_url }}&amp;text={{ share_title }}" target="_blank" rel="noopener" title="Chia sẻ lên X"><i class="fa-brands fa-x-twitter"></i><span>X</span></a>
+    {% when 'copy' %}
+      <button class="share-btn copy" type="button" data-url="{{ page.url | absolute_url }}" title="Sao chép link"><i class="fa-solid fa-link"></i><span>Copy link</span></button>
+    {% endcase %}
+  {% endfor %}
+</div>
+<script>
+  document.querySelectorAll('.share-btn.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var label = btn.querySelector('span');
+      navigator.clipboard.writeText(btn.dataset.url).then(function () {
+        label.textContent = 'Đã copy!';
+        setTimeout(function () { label.textContent = 'Copy link'; }, 1500);
+      });
+    });
+  });
+</script>

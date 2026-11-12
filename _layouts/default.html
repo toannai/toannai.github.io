@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    /* Áp theme trước khi render để không bị nháy. Mặc định: light */
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
+    })();
+  </script>
+  {% seo %}
+  {% feed_meta %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css">
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  <link rel="icon" href="{{ '/images/logo.svg' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/images/logo.svg' | relative_url }}" alt="" width="32" height="32">
+      <span>{{ site.title }}</span>
+    </a>
+    <div class="header-right">
+      <nav>
+        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>home</a>
+        <a href="{{ '/archive.html' | relative_url }}" {% if page.url == '/archive.html' %}class="active"{% endif %}>archive</a>
+        <a href="{{ '/tags.html' | relative_url }}" {% if page.url == '/tags.html' %}class="active"{% endif %}>tags</a>
+        <a href="{{ '/about.html' | relative_url }}" {% if page.url == '/about.html' %}class="active"{% endif %}>about</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Chuyển sang chế độ tối" title="Chuyển sang chế độ tối">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; {{ site.author }} {{ site.time | date: "%Y" }}</span>
+    {% include social.html %}
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+
+      function label(t) {
+        var text = t === 'dark' ? 'Chuyển sang chế độ sáng' : 'Chuyển sang chế độ tối';
+        btn.setAttribute('aria-label', text);
+        btn.title = text;
+      }
+
+      function apply(t) {
+        root.setAttribute('data-theme', t);
+        try { localStorage.setItem('theme', t); } catch (e) {}
+        label(t);
+        // đồng bộ theme cho khung bình luận giscus (nếu có)
+        var frame = document.querySelector('iframe.giscus-frame');
+        if (frame) {
+          frame.contentWindow.postMessage({ giscus: { setConfig: { theme: t } } }, 'https://giscus.app');
+        }
+      }
+
+      label(root.getAttribute('data-theme'));
+      btn.addEventListener('click', function () {
+        apply(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>

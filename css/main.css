@@ -1,0 +1,226 @@
+---
+---
+/* =========================================================
+   Theme tokens
+   Mặc định: light. Dark khi <html data-theme="dark">
+   ========================================================= */
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fa;          /* khối code, blockquote */
+  --fg: #1f2328;               /* tiêu đề */
+  --text: #2f363d;             /* đoạn văn */
+  --muted: #59636e;            /* ngày, tags, phụ */
+  --accent: #1a7f37;
+  --accent-hover: #116329;
+  --accent-soft: #dafbe1;
+  --border: #d1d9e0;
+  --border-soft: #e5e9ed;
+  --inline-code-bg: #eff2f5;
+  --shadow: 0 1px 2px rgba(31, 35, 40, .06);
+
+  /* syntax highlight */
+  --hl-comment: #6e7781;
+  --hl-keyword: #cf222e;
+  --hl-string:  #0a3069;
+  --hl-number:  #0550ae;
+  --hl-func:    #8250df;
+  --hl-var:     #953800;
+
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  --sans: "Nunito", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0d1117;
+  --bg-soft: #161b22;
+  --fg: #f0f6fc;
+  --text: #d1d7e0;             /* không dùng trắng tinh để đỡ chói */
+  --muted: #9198a1;
+  --accent: #3fb950;
+  --accent-hover: #56d364;
+  --accent-soft: rgba(63, 185, 80, .15);
+  --border: #30363d;
+  --border-soft: #21262d;
+  --inline-code-bg: #1f252d;
+  --shadow: none;
+
+  --hl-comment: #8b949e;
+  --hl-keyword: #ff7b72;
+  --hl-string:  #a5d6ff;
+  --hl-number:  #79c0ff;
+  --hl-func:    #d2a8ff;
+  --hl-var:     #ffa657;
+}
+
+/* =========================================================
+   Base
+   Nunito có x-height thấp; JetBrains Mono to hơn cùng cỡ
+   nên các phần mono dùng ~0.75–0.85rem
+   ========================================================= */
+* { box-sizing: border-box; }
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 16px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color .2s, color .2s;
+}
+h1, h2, h3 { font-family: var(--sans); color: var(--fg); letter-spacing: -0.01em; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+.muted { color: var(--muted); font-weight: normal; }
+strong { color: var(--fg); }
+
+/* =========================================================
+   Header
+   ========================================================= */
+.site-header {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  align-items: center; justify-content: space-between;
+  padding: 28px 0 20px;
+  border-bottom: 1px solid var(--border);
+}
+.brand { display: flex; align-items: center; gap: 10px; color: var(--fg); font-family: var(--mono); font-weight: 700; font-size: .9rem; }
+.brand:hover { color: var(--fg); text-decoration: none; }
+.brand img { border-radius: 8px; }
+[data-theme="dark"] .brand img { box-shadow: 0 0 0 1px var(--border); }
+
+.header-right { display: flex; align-items: center; gap: 18px; }
+.site-header nav { display: flex; gap: 16px; font-family: var(--mono); font-size: .8rem; }
+.site-header nav a { color: var(--muted); }
+.site-header nav a.active, .site-header nav a:hover { color: var(--accent); text-decoration: none; }
+
+/* nút chuyển sáng/tối */
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; padding: 0;
+  border: 1px solid var(--border); border-radius: 999px;
+  background: var(--bg); color: var(--muted);
+  cursor: pointer; font-size: .85rem;
+  box-shadow: var(--shadow);
+  transition: color .15s, border-color .15s, background .15s, transform .25s;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+.theme-toggle:active { transform: rotate(-20deg) scale(.92); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.theme-toggle .fa-sun { display: none; }
+[data-theme="dark"] .theme-toggle .fa-sun { display: inline-block; }
+[data-theme="dark"] .theme-toggle .fa-moon { display: none; }
+
+.content { padding: 24px 0 48px; min-height: 60vh; }
+
+/* =========================================================
+   Home
+   ========================================================= */
+.intro { font-family: var(--mono); font-size: .85rem; margin-bottom: 32px; color: var(--fg); }
+.intro p { margin: 0; }
+.intro p + p { color: var(--muted); }
+.prompt { color: var(--accent); }
+
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li { display: grid; grid-template-columns: 100px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px dashed var(--border); }
+.post-list time, .archive-list time { font-family: var(--mono); font-size: .75rem; color: var(--muted); padding-top: 5px; white-space: nowrap; }
+.post-title { font-size: 1.15rem; font-weight: 700; color: var(--fg); line-height: 1.4; }
+.post-title:hover { color: var(--accent); text-decoration: none; }
+.excerpt { margin: 4px 0; color: var(--muted); font-size: .95rem; }
+.tags { margin: 4px 0 0; }
+
+.tag {
+  display: inline-block; margin: 0 6px 6px 0; padding: 0 8px;
+  border: 1px solid var(--border); border-radius: 999px;
+  font-family: var(--mono); font-size: .7rem; line-height: 1.9; color: var(--muted);
+  transition: color .15s, border-color .15s, background .15s;
+}
+.tag:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); text-decoration: none; }
+.tag-cloud { margin-bottom: 24px; }
+
+/* =========================================================
+   Archive / Tags
+   ========================================================= */
+.year { font-family: var(--mono); font-size: 1rem; margin-top: 32px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+.archive-list { list-style: none; padding: 0; }
+.archive-list li { display: flex; gap: 16px; padding: 4px 0; }
+
+/* =========================================================
+   Post
+   ========================================================= */
+h1 { font-size: 1.8rem; font-weight: 800; line-height: 1.25; }
+.post h1 { margin: .4em 0 6px; }
+.meta { color: var(--muted); font-family: var(--mono); font-size: .75rem; }
+.meta .tag { margin-left: 4px; }
+.post h2 { font-size: 1.35rem; font-weight: 700; margin-top: 1.8em; border-bottom: 1px solid var(--border-soft); padding-bottom: 4px; }
+.post h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.5em; }
+.post img { max-width: 100%; border-radius: 8px; }
+blockquote {
+  margin: 1em 0; padding: 6px 16px;
+  border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0;
+  color: var(--muted); background: var(--bg-soft);
+}
+hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+
+code { font-family: var(--mono); font-size: .82em; background: var(--inline-code-bg); color: var(--fg); padding: 2px 5px; border-radius: 4px; }
+pre { background: var(--bg-soft); color: var(--fg); border: 1px solid var(--border-soft); border-radius: 8px; padding: 14px 16px; overflow-x: auto; font-size: .8rem; line-height: 1.6; }
+pre code { background: none; padding: 0; font-size: inherit; }
+
+.post-nav { display: flex; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px solid var(--border); font-size: .9rem; }
+
+/* =========================================================
+   Footer + social
+   ========================================================= */
+.site-footer { display: flex; justify-content: space-between; align-items: center; padding: 20px 0 32px; border-top: 1px solid var(--border); color: var(--muted); font-family: var(--mono); font-size: .75rem; }
+.social { display: inline-flex; gap: 14px; align-items: center; vertical-align: middle; }
+.social a { color: var(--muted); font-size: 1.05rem; line-height: 1; }
+.social a:hover { color: var(--accent); text-decoration: none; }
+
+/* =========================================================
+   Share buttons
+   ========================================================= */
+.share { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 40px 0 8px; padding-top: 16px; border-top: 1px dashed var(--border); }
+.share-label { font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-right: 4px; }
+.share-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 12px; border: 1px solid var(--border); border-radius: 999px;
+  background: var(--bg); color: var(--muted); cursor: pointer;
+  font-family: var(--sans); font-size: .8rem; line-height: 1.6;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.share-btn:hover { text-decoration: none; color: #fff; }
+.share-btn.fb:hover { background: #1877f2; border-color: #1877f2; }
+.share-btn.li:hover { background: #0a66c2; border-color: #0a66c2; }
+.share-btn.x:hover { background: var(--fg); border-color: var(--fg); color: var(--bg); }
+.share-btn.copy:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+[data-theme="dark"] .share-btn.copy:hover { color: #0d1117; }
+
+/* =========================================================
+   Comments (giscus)
+   ========================================================= */
+.comments { margin: 32px 0 8px; }
+.comments-title { font-size: 1.15rem; font-weight: 700; margin: 0 0 12px; }
+.comments-placeholder { padding: 14px 16px; border: 1px dashed var(--border); border-radius: 8px; color: var(--muted); font-size: .85rem; }
+
+/* =========================================================
+   Syntax highlight (rouge)
+   ========================================================= */
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs { color: var(--hl-comment); font-style: italic; }
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kc, .highlight .kt, .highlight .kr { color: var(--hl-keyword); }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .se { color: var(--hl-string); }
+.highlight .m, .highlight .mi, .highlight .mh, .highlight .mf { color: var(--hl-number); }
+.highlight .nf, .highlight .nb, .highlight .fm { color: var(--hl-func); }
+.highlight .nv, .highlight .nx, .highlight .vi { color: var(--hl-var); }
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+@media (max-width: 560px) {
+  html { font-size: 16px; }
+  h1 { font-size: 1.6rem; }
+  .header-right { width: 100%; justify-content: space-between; }
+  .post-list li { grid-template-columns: 1fr; gap: 2px; }
+}

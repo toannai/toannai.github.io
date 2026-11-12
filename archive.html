@@ -1,0 +1,20 @@
+---
+layout: default
+title: Archive
+permalink: /archive.html
+---
+<h1>Archive</h1>
+<p class="muted">{{ site.posts | size }} bài viết</p>
+
+{% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in years %}
+  <h2 class="year">{{ year.name }} <span class="muted">({{ year.items | size }})</span></h2>
+  <ul class="archive-list">
+    {% for post in year.items %}
+    <li>
+      <time>{{ post.date | date: "%d/%m" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

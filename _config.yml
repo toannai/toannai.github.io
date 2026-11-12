@@ -1,0 +1,67 @@
+title: "0xToanNai // notes"
+description: "Ghi chép về hacking, CTF writeups và security research."
+author: "Toan"
+url: "https://toannai.github.io"
+baseurl: ""
+lang: vi
+timezone: Asia/Ho_Chi_Minh
+
+permalink: /:year/:month/:day/:title.html
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Link mạng xã hội (để trống dòng nào thì icon đó tự ẩn)
+social:
+  github: vietcf                   # github.com/<username>
+  linkedin: ""                     # linkedin.com/in/<username>
+  facebook: ""                     # facebook.com/<username>
+
+# Ảnh hiển thị khi share lên Facebook/LinkedIn/X (og:image)
+# Bài nào không khai báo `image:` sẽ dùng ảnh mặc định này.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/og-default.png
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true          # tắt cho 1 bài: đặt `comments: false` ở đầu bài
+
+twitter:
+  card: summary_large_image
+
+# Comment bằng giscus (lưu vào GitHub Discussions)
+# Lấy repo_id và category_id tại https://giscus.app
+comments:
+  enabled: true               # false = tắt comment toàn site
+  giscus:
+    repo: "toannai/toannai.github.io"
+    repo_id: ""               # vd: R_kgDOxxxxxx
+    category: "Announcements"
+    category_id: ""           # vd: DIC_kwDOxxxxxx
+    mapping: pathname         # mỗi URL bài = 1 discussion
+    reactions: true
+    input_position: top       # top | bottom
+    lang: vi
+
+# Nút share dưới mỗi bài viết
+share: [facebook, linkedin, x, copy]
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - screenshots
+  - tools

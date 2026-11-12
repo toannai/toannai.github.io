@@ -1,0 +1,41 @@
+{% assign g = site.comments.giscus %}
+{% if g.repo_id != "" and g.category_id != "" %}
+<section class="comments" id="comments">
+  <h2 class="comments-title">Bình luận</h2>
+  <div class="giscus"></div>
+  <script>
+    /* Tạo script giscus với theme theo chế độ sáng/tối hiện tại */
+    (function () {
+      var attrs = {
+        'data-repo': {{ g.repo | jsonify }},
+        'data-repo-id': {{ g.repo_id | jsonify }},
+        'data-category': {{ g.category | jsonify }},
+        'data-category-id': {{ g.category_id | jsonify }},
+        'data-mapping': {{ g.mapping | default: 'pathname' | jsonify }},
+        'data-strict': '0',
+        'data-reactions-enabled': '{% if g.reactions %}1{% else %}0{% endif %}',
+        'data-emit-metadata': '0',
+        'data-input-position': {{ g.input_position | default: 'top' | jsonify }},
+        'data-theme': document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light',
+        'data-lang': {{ g.lang | default: 'vi' | jsonify }},
+        'data-loading': 'lazy'
+      };
+      var s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js';
+      s.crossOrigin = 'anonymous';
+      s.async = true;
+      for (var k in attrs) s.setAttribute(k, attrs[k]);
+      document.currentScript.parentNode.appendChild(s);
+    })();
+  </script>
+  <noscript>Bật JavaScript để xem bình luận.</noscript>
+</section>
+{% elsif jekyll.environment == "development" %}
+<section class="comments" id="comments">
+  <h2 class="comments-title">Bình luận</h2>
+  <p class="comments-placeholder">
+    giscus chưa cấu hình: điền <code>repo_id</code> và <code>category_id</code> trong <code>_config.yml</code>.
+    (Khung này chỉ hiện khi chạy local.)
+  </p>
+</section>
+{% endif %}
