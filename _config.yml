@@ -29,7 +29,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /images/og-default.png
+      image: /images/og-cover.png
   - scope:
       path: ""
       type: posts

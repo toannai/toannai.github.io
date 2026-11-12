@@ -31,7 +31,7 @@ image: /images/posts/ten-bai.png
 description: "Mô tả ngắn hiện dưới tiêu đề khi share"
 ```
 
-Bài không có `image:` sẽ dùng `images/og-default.png`. Có thể dùng ảnh bất kỳ (PNG/JPG, nên 1200x630).
+Bài không có `image:` sẽ dùng `images/og-cover.png`. Có thể dùng ảnh bất kỳ (PNG/JPG, nên 1200x630).
 
 ## Bình luận (giscus)
 
