@@ -2,8 +2,6 @@
 title: "Hello world (lần n): khi ta quay trở lại"
 tags: [Life]
 description: "Quay lại viết blog sau một thời gian nghỉ."
-redirect_from:
-  - /2026/11/12/bai-dau-tien.html
 ---
 
 Xin chào! Mình từng viết blog, rồi nghỉ một thời gian. Nay quay lại viết tiếp.
