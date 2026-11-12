@@ -16,6 +16,7 @@ SITE="${SITE_TITLE:->_ 0xToanNai // notes}"
 FONT_DIR=/usr/share/fonts/truetype/dejavu
 BOLD="$FONT_DIR/DejaVuSans-Bold.ttf"
 MONO="$FONT_DIR/DejaVuSansMono.ttf"
+SANS="$FONT_DIR/DejaVuSans.ttf"   # dòng tag dùng Sans vì Mono thiếu vài ký tự tiếng Việt (vd: ố)
 MONO_BOLD="$FONT_DIR/DejaVuSansMono-Bold.ttf"
 
 mkdir -p "$(dirname "$OUT")"
@@ -36,7 +37,7 @@ magick -size 1200x630 xc:'#0d1117' \
      -interline-spacing 6 -gravity west caption:"$TITLE" \) \
   -gravity northwest -geometry +80+170 -composite \
   -fill '#30363d' -draw 'rectangle 80,525 1120,527' \
-  -fill '#8b949e' -font "$MONO" -pointsize 28 -annotate +80+550 "$TAGS" \
+  -fill '#8b949e' -font "$SANS" -pointsize 28 -annotate +80+550 "$TAGS" \
   "$OUT"
 
 echo "Đã tạo $OUT"
