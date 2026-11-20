@@ -5,7 +5,9 @@ description: "Phình bụng (Belly Bulge) trên đàn guitar acoustic là gì v�
 image: /assets/img/2022/08/22/20220822_001_intro.png
 ---
 
-Nếu bạn nhận thấy rằng khu vực cầu (Một số gọi là bridge/ngựa) của cây đàn guitar acoustic của bạn cao hơn phần còn lại của mặt trên (mặt top) thùng đàn thì rất có thể cây đàn của bạn đang gặp vấn đề  - Trong giới tiếng việt gọi là “Phình/phồng bụng/top” Tiếng anh thì gọi là “Belly Bulge”. Cùng đọc bài viết này của mình để hiểu rõ hơn về vấn đề này.
+Nếu bạn nhận thấy rằng khu vực cầu (Một số gọi là bridge/ngựa) của cây đàn guitar acoustic của bạn cao hơn phần còn lại của mặt trên (mặt top) thùng đàn thì rất có thể cây đàn của bạn đang gặp vấn đề  - Trong giới tiếng Việt gọi là “Phình/phồng bụng/top” Tiếng Anh thì gọi là “Belly Bulge”. Cùng đọc bài viết này của mình để hiểu rõ hơn về vấn đề này.
+
+![Belly bulge]( {{site.url}}/assets/img/2022/08/22/20220822_001_intro.png)
 
 # Phình bụng (BellyBulge) là gì?
 
@@ -14,7 +16,7 @@ Mỗi cây đàn guitar acoustic đều được thiết kế với các thanh g
 ![bracing]({{site.url}}/assets/img/2022/08/22/20220822_002_bracing.jpg)
 
 Khi sử dụng dây đàn được lắp vào, lực căng dây tác dụng lực lên hệ thống thanh giằng này, nó có thể làm hư hại các hệ thống này theo thời gian. Với dây thép độ căng tầm 150-200 lbs (1 pound/lbs = 0,45359237 kg) sẽ áp dụng lên một cây đàn guitar.
-Hậu quả khi hệ thống thanh giằng bị hư lại thì ở thùng đàn - phần mặt trên của đàn (mặt top) phần gỗ bị kéo lên ở khu vực cầu (ta còn hay gọi là ngựa/bridge) vì lực căng của dây. Điều này sau đó làm cho các dây di chuyển xa hơn khỏi phím đàn - làm cao action đàn. Tùy thuộc việc nó bị cong vênh hay di chuyển đôi khi cũng làm nghiêng cầu gây ra các vấn đề khác như âm thanh một số dây bị ù hoặc ồn. Nghiêm trọng hơn cũng có thể làm nứt ở một số vị trí trên đàn.
+Hậu quả khi hệ thống thanh giằng bị hư hại thì ở thùng đàn - phần mặt trên của đàn (mặt top) phần gỗ bị kéo lên ở khu vực cầu (ta còn hay gọi là ngựa/bridge) vì lực căng của dây. Điều này sau đó làm cho các dây di chuyển xa hơn khỏi phím đàn - làm cao action đàn. Tùy thuộc việc nó bị cong vênh hay di chuyển đôi khi cũng làm nghiêng cầu gây ra các vấn đề khác như âm thanh một số dây bị ù hoặc ồn. Nghiêm trọng hơn cũng có thể làm nứt ở một số vị trí trên đàn.
 
 # Nguyên nhân
 
@@ -26,9 +28,9 @@ Ngoài ra một trong những nguyên nhân phổ biến nhất của chứng ph
 
 # Cách kiểm tra
 
-Trước khi bắt đầu hãy nhớ rằng các mặt đàn guitar acoustic thường không hoàn toàn bằng phẳng - đây là thiết kế của nhiều nhà sảm xuất, một số có hình vòm ~ cong lên ở giữa. Do đó nhiều người mua một cây đàn mới toanh vẫn sẽ có cầu cao ngay từ khi nó được sảm xuất tại nhà máy như một phần của thiết kế. Điều này không tệ vì cây đàn guitar được thiết kế theo cách này để đặt chiều cao dây khỏi phím đàn.
+Trước khi bắt đầu hãy nhớ rằng các mặt đàn guitar acoustic thường không hoàn toàn bằng phẳng - đây là thiết kế của nhiều nhà sản xuất, một số có hình vòm ~ cong lên ở giữa. Do đó nhiều người mua một cây đàn mới toanh vẫn sẽ có cầu cao ngay từ khi nó được sản xuất tại nhà máy như một phần của thiết kế. Điều này không tệ vì cây đàn guitar được thiết kế theo cách này để đặt chiều cao dây khỏi phím đàn.
 
-**"Nếu bạn đặt một chiếc thước thẳng trên đỉnh cong của mặt top cây đàn acoustic, bạn có thể sẽ có một khoảng trống ở hai bên lên đến 3/16 inches.**
+**"Nếu bạn đặt một chiếc thước thẳng trên đỉnh cong của mặt top cây đàn acoustic, bạn có thể sẽ có một khoảng trống ở hai bên lên đến 3/16 inches."**
 
 Một số người chơi nhầm điều này với chứng phình bụng và sợ rằng cây đàn mới của họ bị hỏng :). Lúc này hãy cứ bình tĩnh. Để biết cây đàn guitar acoustic của bạn có bị ảnh hưởng bởi vết phồng này hay không, có một số điều cần lưu ý:
 
@@ -39,7 +41,7 @@ Một số người chơi nhầm điều này với chứng phình bụng và s�
 
 **Tilted or lifted bridge - Cầu nghiêng hoặc cầu nâng:** Đôi khi rất khó để biết cầu có bị nghiêng hay không, vì vậy việc kiểm tra xem có bất kỳ khoảng trống nào bên dưới cầu hay không sẽ giúp bạn nhận ra nó có đang nâng lên khỏi đỉnh hay không. Bạn cũng có thể kiểm tra điều này bằng cách thử đặt một mảnh giấy giữa cây cầu và mặt top đàn xem có lọt khe không ~ nghe hơi stupid vì khi đó nhìn rõ còn gì cơ mà mấy ông nước ngoài khuyên vậy.
 
-Ngoài cách này có thể tham khảo phương pháp kiểm tra của các kỹ sư của taylor hướng dẫn ở video này [https://www.youtube.com/watch?v=GS6GqjP-zMY&ab_channel=TaylorGuitars](https://www.youtube.com/watch?v=GS6GqjP-zMY&ab_channel=TaylorGuitars) . Cách làm là dùng 1 thước thẳng đặt lên 2 bên đỉnh đường cong mặt đàn bên nếu thước bám vào mặt đàn đều là đàn bình thường. Ngược lại có gap - khoảng trống là đàn bị cong/vênh.
+Ngoài cách này có thể tham khảo phương pháp kiểm tra của các kỹ sư của Taylor hướng dẫn ở video này [https://www.youtube.com/watch?v=GS6GqjP-zMY&ab_channel=TaylorGuitars](https://www.youtube.com/watch?v=GS6GqjP-zMY&ab_channel=TaylorGuitars) . Cách làm là dùng 1 thước thẳng đặt lên 2 bên đỉnh đường cong mặt đàn bên nếu thước bám vào mặt đàn đều là đàn bình thường. Ngược lại có gap - khoảng trống là đàn bị cong/vênh.
 
 ![taylor method]({{site.url}}/assets/img/2022/08/22/20220822_003_taylor_method.png)
 
@@ -53,9 +55,9 @@ Ngoài cách này có thể tham khảo phương pháp kiểm tra của các k�
 
 Cách tốt nhất để ngăn ngừa chứng phình bụng là giữ cây đàn guitar acoustic ở trong case đàn trong trường hợp bạn không chơi nó. Điều này sẽ đảm bảo rằng cây đàn không bị ảnh hưởng bởi bất kỳ sự thay đổi mạnh mẽ nào về nhiệt độ hoặc độ ẩm.
 
-Kiểm soát môi trường trong thùng đàn bằng túi giữ/hút ẩm cho đàn guitar là một cách làm tốt hơn để giúp ngăn ngừa chứng phình bụng. (Với martin độ ẩm 45%-55% là tối ưu. Tham khảo [https://www.youtube.com/watch?v=fVmwVDPJ_g0&ab_channel=MartinGuitar](https://www.youtube.com/watch?v=fVmwVDPJ_g0&ab_channel=MartinGuitar))
+Kiểm soát môi trường trong thùng đàn bằng túi giữ/hút ẩm cho đàn guitar là một cách làm tốt hơn để giúp ngăn ngừa chứng phình bụng. (Với Martin độ ẩm 45%-55% là tối ưu. Tham khảo [https://www.youtube.com/watch?v=fVmwVDPJ_g0&ab_channel=MartinGuitar](https://www.youtube.com/watch?v=fVmwVDPJ_g0&ab_channel=MartinGuitar))
 
-Bạn cũng nên tránh để cây đàn của mình dưới ánh nắng trực tiếp, vì điều này có thể làm cho keo liên kết giữa các thành phần nóng lên các thanh giàn bị di chuyển, xê dịch hoặc cong vênh. Nếu bạn phải bảo quản trong phòng có ánh nắng mặt trời, hãy đảm bảo đóng hộp và có thiết bị làm mát.
+Bạn cũng nên tránh để cây đàn của mình dưới ánh nắng trực tiếp, vì điều này có thể làm cho keo liên kết giữa các thành phần nóng lên các thanh giằng bị di chuyển, xê dịch hoặc cong vênh. Nếu bạn phải bảo quản trong phòng có ánh nắng mặt trời, hãy đảm bảo đóng hộp và có thiết bị làm mát.
 
 Khi bạn không chơi guitar acoustic, tốt nhất là bạn nên giữ nó trong môi trường được kiểm soát về khí hậu (nhiệt độ và độ ẩm). Bằng cách đó, bạn có thể chắc chắn rằng các điều kiện sẽ không làm hỏng thiết bị theo thời gian.
 
@@ -68,7 +70,7 @@ Nếu bạn cảm thấy mình có khả năng tự sửa chữa, có một số
 - Weight and Humidity - Trọng lượng và kiểm soát độ ẩm
 - Bridge removal and Belly Reducer - Gỡ cầu và giảm phình bụng (bằng nẹp)
 
-Tháo cầu và nẹp là phương pháp được ưa chuộng và rất được khuyến khích. Tuy nhiên cũng những người khác đã thành công chỉ với việc tăng thêm trọng lượng và kiểm soát độ ẩm. Tuy nhiên các phương pháp này có thể làm mặt top đàn có thể bị ảnh hưởng.
+Tháo cầu và nẹp là phương pháp được ưa chuộng và rất được khuyến khích. Tuy nhiên cũng có những người khác đã thành công chỉ với việc tăng thêm trọng lượng và kiểm soát độ ẩm. Tuy nhiên các phương pháp này có thể làm mặt top đàn có thể bị ảnh hưởng.
 
 ### **Weight and Humidity**
 
@@ -82,7 +84,7 @@ Kiểm tra độ phồng bằng cách đo lại với thước thẳng sau 24 gi
 
 ### **Bridge Removal and Belly Reducer**
 
-Phương pháp tiếp theo này là cách tốt nhất để khắc phục chứng phình bụng và được hầu hết các chuyên gia sử dụng. Trước tiên, bạn phải bắt đầu bằng cách tháo cầu. Điều này có thể khó khăn nếu không có dụng cụ phù hợp, nếu bạn không cẩn thận có thể  vô tình làm hỏng phần mặt top của đàn hoặc thậm trí cả các thành phần khác - các thanh giằng bên dưới. **Nếu cảm thấy không tự tin, tốt nhất bạn nên đến gặp kỹ thuật viên guitar chuyên nghiệp.**
+Phương pháp tiếp theo này là cách tốt nhất để khắc phục chứng phình bụng và được hầu hết các chuyên gia sử dụng. Trước tiên, bạn phải bắt đầu bằng cách tháo cầu. Điều này có thể khó khăn nếu không có dụng cụ phù hợp, nếu bạn không cẩn thận có thể  vô tình làm hỏng phần mặt top của đàn hoặc thậm chí cả các thành phần khác - các thanh giằng bên dưới. **Nếu cảm thấy không tự tin, tốt nhất bạn nên đến gặp kỹ thuật viên guitar chuyên nghiệp.**
 
 Khi cây cầu được tháo ra và được làm sạch, một bộ công cụ giảm phình bụng sẽ được sử dụng để cố định chỗ phình. Bộ dụng cụ này bao gồm các cầu, trục nhôm hoặc kẹp đặc biệt.
 
@@ -94,16 +96,16 @@ Lực kẹp và nhiệt cao sẽ làm thẳng chỗ phồng và khôi phục m�
 
 **How much belly bulge is acceptable on an acoustic guitar?**
 
-Miễn là cây đàn của bạn chơi được và âm thanh tốt, bụng phình ra không phải là điều đáng lo ngại. Đó chỉ là vấn đề cần quan tâm khi không còn chơi được guitar hoặc âm thanh yếu. Nếu bạn không gặp phải bất kỳ vấn đề nào mà chúng tôi đã đề cập, thì đừng lo lắng về điều đó. Cứ yên tâm mà chơi thôi các ông 🇲🇲 nếu vẫn thấy thỏa mãn và TTTT được,
+Miễn là cây đàn của bạn chơi được và âm thanh tốt, bụng phình ra không phải là điều đáng lo ngại. Đó chỉ là vấn đề cần quan tâm khi không còn chơi được guitar hoặc âm thanh yếu. Nếu bạn không gặp phải bất kỳ vấn đề nào mà chúng tôi đã đề cập, thì đừng lo lắng về điều đó. Cứ yên tâm mà chơi thôi các ông nếu vẫn thấy thỏa mãn và TTTT được,
 
 Cơ mà nếu vẫn còn lo lắng về nó, hãy đưa nó đến kỹ thuật viên để kiểm tra và xem bạn có bị phình bụng hay không và xử lý thế nào nha,
 
 
 # Tham khảo
 
-https://killerrig.com/acoustic-guitar-belly-bulge/
+- [Killer Rig: Acoustic guitar belly bulge](https://killerrig.com/acoustic-guitar-belly-bulge/)
 
-https://www.youtube.com/watch?v=tB8tELj43RE&t=10s&ab_channel=TaylorGuitars
+- [Taylor Guitars (YouTube)](https://www.youtube.com/watch?v=tB8tELj43RE&t=10s&ab_channel=TaylorGuitars)
 
-https://www.youtube.com/watch?v=fVmwVDPJ_g0&t=59s&ab_channel=MartinGuitar
+- [Martin Guitar (YouTube)](https://www.youtube.com/watch?v=fVmwVDPJ_g0&t=59s&ab_channel=MartinGuitar)
 

@@ -157,7 +157,7 @@ h1 { font-size: 1.8rem; font-weight: 800; line-height: 1.25; }
 .meta .tag { margin-left: 4px; }
 .post h2 { font-size: 1.35rem; font-weight: 700; margin-top: 1.8em; border-bottom: 1px solid var(--border-soft); padding-bottom: 4px; }
 .post h3 { font-size: 1.2rem; font-weight: 700; margin-top: 1.5em; }
-.post img { max-width: 100%; border-radius: 8px; }
+.post img { display: block; max-width: 100%; height: auto; margin: 1.2em auto; border-radius: 8px; }
 blockquote {
   margin: 1em 0; padding: 6px 16px;
   border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0;
